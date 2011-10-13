@@ -44,8 +44,11 @@ end
 
 # Install:
 #  sudo gem install ci_reporter
-require 'rubygems'
+
 gem 'ci_reporter'
+
+require 'rspec/core/rake_task'
+
 #require 'ci/reporter/rake/test_unit' # use this if you're using Test::Unit
 require 'ci/reporter/rake/rspec'
 
